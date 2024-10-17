@@ -437,6 +437,23 @@ html::-webkit-scrollbar {
     .container_cards .cards:hover img {
         height: 500px;
     }
+
+    .hero .content_hero img {
+        margin-left: 5rem;
+        width: 200px;
+    }
+
+    .container_cards .cards img {
+        height: 300px;
+    }
+
+    .container_cards .cards:hover img {
+        height: 350px;
+    }
+
+    .container_cards {
+        padding: 0 1rem 3rem;
+    }
 }
 
 @media (width < 1200px) {
@@ -465,10 +482,6 @@ html::-webkit-scrollbar {
         padding: 5rem 5rem 10rem;
         gap: 5rem;
         position: relative;
-    }
-
-    .hero .content_hero img {
-        margin-left: 5rem;
     }
 
     .hero .content_hero .icons {
