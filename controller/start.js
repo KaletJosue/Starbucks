@@ -46,3 +46,12 @@ window.addEventListener('scroll', function() {
         card4.classList.add('active')
     }
 })
+
+// Buttons
+
+var login = document.querySelector('#login')
+
+
+login.addEventListener('click', () => {
+    location.href = "/Starbucks/views/login.php"
+})

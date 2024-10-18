@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat';
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+body .text span {
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-image: radial-gradient(#0d704d, #073827);
+    position: fixed;
+    top: -500px;
+    right: -400px;
+    z-index: -1;
+}
+
+body .text h1 {
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+}
+
+body .text p {
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    color: white;
+    width: 20%;
+    text-align: end;
+}
+
+body .text img {
+    width: 300px;
+    z-index: 1;
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
+
+body form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body form img {
+    width: 200px;
+}
+
+body form h1 {
+    font-weight: 900;
+    color: #0d704d;
+}
+
+body form p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+body form .input {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgb(235, 235, 235);
+    padding: 0 0 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+body form .input input {
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+body form .input i {
+    color: #0d704d;
+    font-size: 12px;
+}
+
+body form .btn {
+    width: 100%;
+    padding: .7rem 2rem;
+    font-size: 12px;
+    background-color: #0d704d;
+    border: solid 2px #0d704d;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (width < 1200px) {
+    body .text img {
+        width: 200px;
+        margin-top: 10rem;
+        margin-left: 12rem;
+    }
+
+    body .text span {
+        width: 700px;
+        height: 700px;
+        top: -200px;
+        right: -300px;
+    }
+}
+
+@media (width < 900px) {
+    body .text img {
+        margin-top: 15rem;
+    }
+}
+
+@media (width < 800px) {
+    body .text {
+        display: none;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body form {
+        padding: 0 5rem;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (width < 400px) {
+    body form {
+        padding: 0 1rem;
+        width: 100%;
+        height: 100vh;
+    }
+}
