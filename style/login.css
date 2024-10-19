@@ -14,156 +14,230 @@ html::-webkit-scrollbar {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     overflow: hidden;
     position: relative;
 }
 
-body .text span {
-    display: block;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background-image: radial-gradient(#0d704d, #073827);
-    position: fixed;
-    top: -500px;
-    right: -400px;
-    z-index: -1;
-}
-
-body .text h1 {
-    font-size: 30px;
-    font-weight: 900;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-}
-
-body .text p {
-    font-size: 12px;
-    font-weight: 400;
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    color: white;
-    width: 20%;
-    text-align: end;
-}
-
-body .text img {
-    width: 300px;
-    z-index: 1;
-    margin-top: 1rem;
-    margin-left: 10rem;
-}
-
 body form {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all .4s ease;
 }
 
-body form img {
-    width: 200px;
+body form:nth-child(2) {
+    transform: translateX(100vw);
+}
+
+body form:nth-child(2).active {
+    transform: translateX(0);
+}
+
+body form:first-child {
+    transform: translateX(0);
+}
+
+body form:first-child img,
+body form:first-child h1,
+body form:first-child p,
+body form:first-child .input {
+    animation: revealBottom 1s forwards;
+}
+
+body form:first-child .btn {
+    animation: revealBottom2 1s forwards;
+}
+
+body form:first-child.active {
+    transform: translateX(-100vw);
 }
 
 body form h1 {
     font-weight: 900;
-    color: #0d704d;
+    font-size: 50px;
+    color: #067655;
 }
 
 body form p {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -.5rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 body form .input {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 70%;
+    padding-left: 1rem;
     background-color: rgb(235, 235, 235);
-    padding: 0 0 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    margin-bottom: .5rem;
 }
 
 body form .input input {
-    padding: 1rem 1rem;
     width: 100%;
+    padding: 1rem 2rem 1rem .5rem;
     background-color: transparent;
+    border-radius: 0 10px 10px 0;
     border: none;
     outline: none;
-    border-radius: 10px;
-    font-size: 12px;
+    font-weight: 400;
+    color: black;
 }
 
 body form .input i {
-    color: #0d704d;
     font-size: 12px;
+    color: #067655;
 }
 
-body form .btn {
-    width: 100%;
-    padding: .7rem 2rem;
-    font-size: 12px;
-    background-color: #0d704d;
-    border: solid 2px #0d704d;
-    border-radius: 10px;
+body form a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #067655;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+body form input {
+    width: 70%;
+    padding: 1rem 2rem;
+    background-color: #067655;
     color: white;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+}
+
+body .span1 {
+    display: block;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    background-image: radial-gradient(#033022, #078C65);
+    position: absolute;
+    right: -560px;
+    top: -650px;
+    transition: all 1s ease;
+}
+
+body .span1.active {
+    transform: translateX(-1500px);
+}
+
+body .text1 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 450px;
+    text-align: end;
+    transition: all .8s ease;
+}
+
+body .text2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 450px;
+    text-align: start;
+    transition: all 1.5s ease;
+    transform: translateX(-100vw);
+}
+
+body .text1 h1,
+body .text2 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+body .text1 p,
+body .text2 p {
+    font-size: 13px;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+body .text1 button,
+body .text2 button {
+    padding: .7rem 2rem;
+    background-color: white;
+    border: solid 2px white;
+    color: #033022;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 900;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
-@media (width < 1200px) {
-    body .text img {
-        width: 200px;
-        margin-top: 10rem;
-        margin-left: 12rem;
-    }
+body .text1 button:hover,
+body .text2 button:hover {
+    background-color: transparent;
+    color: white;
+}
 
-    body .text span {
-        width: 700px;
-        height: 700px;
-        top: -200px;
-        right: -300px;
+body .text1.active {
+    transform: translateX(100vw);
+}
+
+body .text2.active {
+    transform: translateX(0);
+}
+
+body .img1 {
+    position: absolute;
+    right: 290px;
+    top: 150px;
+    width: 450px;
+    transform: rotate(10deg);
+    filter: drop-shadow(1px 1px 1rem #033022);
+    transition: all 2s ease;
+    animation: revealTop 1s forwards;
+}
+
+body .img1.active {
+    transform: translateX(100vw);
+}
+
+body .img2 {
+    position: absolute;
+    left: 290px;
+    top: 150px;
+    width: 400px;
+    transform: rotate(-10deg) translateX(-100vw);
+    filter: drop-shadow(1px 1px 1rem #033022);
+    transition: all 2s ease;
+}
+
+body .img2.active {
+    transform: translateX(0) rotate(-10deg);
+}
+
+@keyframes revealBottom {
+    0% {
+        transform: translateY(200px) scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
     }
 }
 
-@media (width < 900px) {
-    body .text img {
-        margin-top: 15rem;
+@keyframes revealBottom2 {
+    0% {
+        transform: translateY(100vh);
     }
-}
-
-@media (width < 800px) {
-    body .text {
-        display: none;
-    }
-
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    body form {
-        padding: 0 5rem;
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-@media (width < 400px) {
-    body form {
-        padding: 0 1rem;
-        width: 100%;
-        height: 100vh;
+    100% {
+        transform: translateY(0);
     }
 }

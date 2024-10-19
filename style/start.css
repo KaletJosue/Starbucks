@@ -260,7 +260,7 @@ html::-webkit-scrollbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 15rem 10rem 5rem;
+    padding: 10rem 10rem 5rem;
 }
 
 .container_cards .cards {
@@ -319,7 +319,7 @@ html::-webkit-scrollbar {
 }
 
 .container_cards .cards:hover img {
-    height: 530px;
+    height: 450px;
     transform: rotate(-4deg);
     filter: drop-shadow(-.5rem -1px .5rem #032D20);
 }
@@ -376,7 +376,7 @@ html::-webkit-scrollbar {
 }
 
 .container_cards .cards img {
-    height: 500px;
+    height: 400px;
     margin-bottom: 2rem;
     transition: all .2s ease;
 }
@@ -425,7 +425,7 @@ html::-webkit-scrollbar {
 
 @media (width < 1600px) {
     .container_cards {
-        padding: 15rem 3rem 5rem;
+        padding: 10rem 3rem 5rem;
     }
 }
 
