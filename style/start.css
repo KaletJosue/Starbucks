@@ -381,6 +381,104 @@ html::-webkit-scrollbar {
     transition: all .2s ease;
 }
 
+.late {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 800px;
+    background-color: #b05b00;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.late h1 {
+    font-size: 150px;
+    font-weight: 900;
+    color: white;
+}
+
+.late .border {
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 5px white;
+    z-index: 1;
+}
+
+.late h1 span {
+    color: #432200;
+    transition: all 1s ease;
+}
+
+.late p {
+    color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    font-size: 13px;
+}
+
+.late button {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    padding: .7rem 2rem;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.late .move_late {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    gap: .5rem;
+    color: white;
+}
+
+.late .move_late h3 {
+    font-weight: 400;
+}
+
+.late .move_late i:last-child {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.late .move_late i:first-child {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.late img {
+    width: 350px;
+    transform: rotate(15deg) translate(100vw, -50%);
+    position: absolute;
+    filter: drop-shadow(2rem 1px 2rem #432200);
+    transition: all 1s ease;
+}
+
+.late img.active {
+    transform: rotate(15deg) translateX(0);
+}
+
+.late img.out {
+    transform: rotate(15deg) translate(-100vw, -50%);
+}
+
 @keyframes revealBottom {
     0% {
         transform: translateY(200px) scale(1.5);

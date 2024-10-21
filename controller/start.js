@@ -17,7 +17,7 @@ function animateBars() {
 
 // scroll
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var card1 = document.querySelector('#first_card')
     var card2 = document.querySelector('#second_card')
     var card3 = document.querySelector('#third_card')
@@ -28,7 +28,7 @@ window.addEventListener('scroll', function() {
     let posicionObj3 = card3.getBoundingClientRect().top
     let posicionObj4 = card4.getBoundingClientRect().top
 
-    let tamanoPantalla = window.innerHeight/3.5
+    let tamanoPantalla = window.innerHeight / 3.5
 
     if ((posicionObj1 - 400) < tamanoPantalla) {
         card1.classList.add('active')
@@ -55,3 +55,105 @@ var login = document.querySelector('#login')
 login.addEventListener('click', () => {
     location.href = "/Starbucks/views/login.php"
 })
+
+// imgs
+
+var move_right = document.querySelector('#move_right')
+var move_left = document.querySelector('#move_left')
+var number_move = document.querySelector('.number_move')
+var variable = 1
+
+var late = document.querySelector('.late')
+var span = document.querySelector('.h1span')
+
+move_right.addEventListener('click', () => {
+    if (variable == 5) {
+        variable = 1;
+    } else {
+        variable += 1;
+    }
+
+    var imgactive = 'img' + variable;
+    var imgdesactive = 'img' + (variable === 1 ? 5 : variable - 1);
+
+    var activeImg = document.querySelector(`.${imgactive}`);
+    var desactiveImg = document.querySelector(`.${imgdesactive}`);
+
+    if (desactiveImg) {
+        desactiveImg.classList.add('out');
+        desactiveImg.classList.remove('active');
+    }
+
+    if (activeImg) {
+        activeImg.classList.add('active');
+        activeImg.classList.remove('out');
+    }
+
+    number_move.textContent = variable;
+
+    if (imgactive == 'img1') {
+        late.style.background = "#b05b00"
+        span.style.color = '#432200'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #432200)"
+    } else if (imgactive == 'img2') {
+        late.style.background = "gray"
+        span.style.color = '#404040'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #404040)"
+    } else if (imgactive == 'img3') {
+        late.style.background = "#a13109"
+        span.style.color = '#5c220d'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #5c220d)"
+    } else if (imgactive == 'img4') {
+        late.style.background = "#d1534d"
+        span.style.color = '#5c220d'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #8f3935)"
+    }
+});
+
+move_left.addEventListener('click', () => {
+    if (variable === 1) {
+        variable = 5;
+    } else {
+        variable -= 1;
+    }
+
+    var imgactive = 'img' + variable; 
+    var imgdesactive = 'img' + (variable + 1); 
+
+    if (variable == 5) {
+        imgdesactive = 'img' + 1
+    }
+
+    var activeImg = document.querySelector(`.${imgactive}`);
+    var desactiveImg = document.querySelector(`.${imgdesactive}`);
+
+    if (desactiveImg) {
+        desactiveImg.classList.add('out');
+        desactiveImg.classList.remove('active');
+    }
+
+    if (activeImg) {
+        activeImg.classList.add('active');
+        activeImg.classList.remove('out');
+    }
+
+    number_move.textContent = variable;
+
+    if (imgactive == 'img1') {
+        late.style.background = "#b05b00"
+        span.style.color = '#432200'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #432200)"
+    } else if (imgactive == 'img2') {
+        late.style.background = "gray"
+        span.style.color = '#404040'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #404040)"
+    } else if (imgactive == 'img3') {
+        late.style.background = "#a13109"
+        span.style.color = '#5c220d'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #5c220d)"
+    } else if (imgactive == 'img4') {
+        late.style.background = "#d1534d"
+        span.style.color = '#5c220d'
+        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #8f3935)"
+    }
+});
