@@ -351,11 +351,11 @@ button#okBtn:hover {
 
 @media (height < 1000px) {
     body .img1 {
-        width: 350px;
+        width: 150px;
     }
 
     body .img2 {
-        width: 300px;
+        width: 100px;
     }
 }
 
@@ -373,13 +373,17 @@ button#okBtn:hover {
     body .img1 {
         margin-top: 2rem;
         margin-right: 5rem;
-        width: 280px;
+        width: 230px;
     }
 
     body .img2 {
         margin-top: 2rem;
-        margin-right: 5rem;
-        width: 280px;
+        margin-left: 5rem;
+        width: 200px;
+    }
+
+    body form img {
+        height: 100px;
     }
 }
 

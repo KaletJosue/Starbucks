@@ -616,6 +616,10 @@ html::-webkit-scrollbar {
     .container_cards {
         padding: 0 1rem 3rem;
     }
+
+    .late img.active {
+        width: 280px;
+    }
 }
 
 @media (width < 1200px) {
