@@ -15,39 +15,8 @@
 </head>
 
 <body>
-
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $server = "localhost";
-        $usuario = "root";
-        $contraseña = "";
-        $db = "ejemplo";
-
-        $conexion = mysqli_connect($server, $usuario, $contraseña, $db) or die("Error en la conexión");
-
-        if (isset($_POST['btnRegistrar'])) {
-            $clave = $_POST['txtClave'];
-            $nombre = $_POST['txtNombre'];
-            $correo = $_POST['txtCorreo'];
-
-            $insertar = "INSERT INTO datos (clave, nombre, correo) VALUES ('$clave', '$nombre', '$correo')";
-            $resultado = mysqli_query($conexion, $insertar) or die ("Error al insertar los datos");
-
-            echo "<script>
-            Swal.fire({
-                title: 'Éxito',
-                text: 'Datos insertados correctamente',
-                icon: 'success'
-            });
-            </script>";
-        }
-
-        mysqli_close($conexion);
-    }
-    ?>
-
     <div class="container">
-        <form action="" method="post" class="login">
+        <form action="/Starbucks/php/login_usuario.php" method="post" class="login">
             <img src="/Starbucks/assets/logo.png" alt="">
             <h1>STARBUCKS</h1>
             <p>Bienvenido de vuelta, inicia sesión con tus credenciales:</p>
@@ -60,10 +29,10 @@
                 <input type="password" placeholder="Contraseña" id="txtClave" name="txtClave" required>
             </div>
             <a class="btnCuenta">¿No tienes cuenta? Regístrate</a>
-            <input type="submit" value="Iniciar Sesión" name="btnRegistrar" class="btn">
+            <input type="submit" value="Iniciar Sesión" name="btnIniciar" class="btn">
         </form>
 
-        <form action="" method="post" class="register">
+        <form action="/Starbucks/php/registro_usuario.php" method="post" class="register">
             <img src="/Starbucks/assets/logo.png" alt="">
             <h1>STARBUCKS</h1>
             <p>Crea una cuenta nueva con tus credenciales:</p>
