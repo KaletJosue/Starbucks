@@ -66,6 +66,10 @@ var variable = 1
 var late = document.querySelector('.late')
 var span = document.querySelector('.h1span')
 
+var addcar = document.querySelector('#addcar')
+var circle = document.querySelector('.circle')
+var circle_vacio = document.querySelector('.circle_vacio')
+
 move_right.addEventListener('click', () => {
     if (variable == 5) {
         variable = 1;
@@ -92,21 +96,55 @@ move_right.addEventListener('click', () => {
     number_move.textContent = variable;
 
     if (imgactive == 'img1') {
-        late.style.background = "#b05b00"
+        late.style.background = "#a07c2e"
         span.style.color = '#432200'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #432200)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #432200)"
+        circle.style.background = "#68501d47"
+        circle_vacio.style.background = "#68501d47"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img2') {
         late.style.background = "gray"
         span.style.color = '#404040'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #404040)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #404040)"
+        circle.style.background = "#47474782"
+        circle_vacio.style.background = "#47474782"
+        circle_vacio.classList.add('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img3') {
-        late.style.background = "#a13109"
+        late.style.background = "#cdaa58"
         span.style.color = '#5c220d'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #5c220d)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #5c220d)"
+        circle.style.background = "#68501d47"
+        circle_vacio.style.background = "#68501d47"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.add('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img4') {
-        late.style.background = "#d1534d"
+        late.style.background = "#e37974"
         span.style.color = '#5c220d'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #8f3935)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #8f3935)"
+        circle.style.background = "#a7443e78"
+        circle_vacio.style.background = "#a7443e78"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.add('rosado')
+        circle_vacio.classList.remove('verde')
+    } else if (imgactive == 'img5') {
+        late.style.background = "#a6ad5a"
+        span.style.color = '#51542d'
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #70753b)"
+        circle.style.background = "#71763f92"
+        circle_vacio.style.background = "#71763f92"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.add('verde')
     }
 });
 
@@ -117,8 +155,8 @@ move_left.addEventListener('click', () => {
         variable -= 1;
     }
 
-    var imgactive = 'img' + variable; 
-    var imgdesactive = 'img' + (variable + 1); 
+    var imgactive = 'img' + variable;
+    var imgdesactive = 'img' + (variable + 1);
 
     if (variable == 5) {
         imgdesactive = 'img' + 1
@@ -140,20 +178,54 @@ move_left.addEventListener('click', () => {
     number_move.textContent = variable;
 
     if (imgactive == 'img1') {
-        late.style.background = "#b05b00"
+        late.style.background = "#a07c2e"
         span.style.color = '#432200'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #432200)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #432200)"
+        circle.style.background = "#68501d47"
+        circle_vacio.style.background = "#68501d47"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img2') {
         late.style.background = "gray"
         span.style.color = '#404040'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #404040)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #404040)"
+        circle.style.background = "#47474782"
+        circle_vacio.style.background = "#47474782"
+        circle_vacio.classList.add('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img3') {
-        late.style.background = "#a13109"
+        late.style.background = "#cdaa58"
         span.style.color = '#5c220d'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #5c220d)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #5c220d)"
+        circle.style.background = "#68501d47"
+        circle_vacio.style.background = "#68501d47"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.add('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.remove('verde')
     } else if (imgactive == 'img4') {
         late.style.background = "#d1534d"
         span.style.color = '#5c220d'
-        activeImg.style.filter = "drop-shadow(2rem 1px 2rem #8f3935)"
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #8f3935)"
+        circle.style.background = "#a7443e78"
+        circle_vacio.style.background = "#a7443e78"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.add('rosado')
+        circle_vacio.classList.remove('verde')
+    } else if (imgactive == 'img5') {
+        late.style.background = "#a6ad5a"
+        span.style.color = '#51542d'
+        activeImg.style.filter = "drop-shadow(1rem 1px 1rem #70753b)"
+        circle.style.background = "#71763f92"
+        circle_vacio.style.background = "#71763f92"
+        circle_vacio.classList.remove('gray')
+        circle_vacio.classList.remove('amarillo')
+        circle_vacio.classList.remove('rosado')
+        circle_vacio.classList.add('verde')
     }
 });

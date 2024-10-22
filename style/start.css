@@ -296,12 +296,9 @@ html::-webkit-scrollbar {
 .container_cards .cards:hover {
     transform: scale(1.05);
     background-color: #032D20;
-    background-image: linear-gradient(
-        0deg,
-        #078c6496,
-        rgba(0, 0, 0, 0)
-    ) 
-    ,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23032D20' cx='50' cy='0' r='50'/%3E%3Cg fill='%23033123' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23033626' cx='50' cy='100' r='50'/%3E%3Cg fill='%23033a2a' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23033f2d' cx='50' cy='200' r='50'/%3E%3Cg fill='%23044330' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23044834' cx='50' cy='300' r='50'/%3E%3Cg fill='%23044c37' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2304513a' cx='50' cy='400' r='50'/%3E%3Cg fill='%2304563e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23045a41' cx='50' cy='500' r='50'/%3E%3Cg fill='%23045f45' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23046448' cx='50' cy='600' r='50'/%3E%3Cg fill='%2304694c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23056e4f' cx='50' cy='700' r='50'/%3E%3Cg fill='%23057353' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23057857' cx='50' cy='800' r='50'/%3E%3Cg fill='%23067d5a' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2306825e' cx='50' cy='900' r='50'/%3E%3Cg fill='%23068761' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23078C65' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: linear-gradient(0deg,
+            #078c6496,
+            rgba(0, 0, 0, 0)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23032D20' cx='50' cy='0' r='50'/%3E%3Cg fill='%23033123' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23033626' cx='50' cy='100' r='50'/%3E%3Cg fill='%23033a2a' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23033f2d' cx='50' cy='200' r='50'/%3E%3Cg fill='%23044330' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23044834' cx='50' cy='300' r='50'/%3E%3Cg fill='%23044c37' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2304513a' cx='50' cy='400' r='50'/%3E%3Cg fill='%2304563e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23045a41' cx='50' cy='500' r='50'/%3E%3Cg fill='%23045f45' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23046448' cx='50' cy='600' r='50'/%3E%3Cg fill='%2304694c' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23056e4f' cx='50' cy='700' r='50'/%3E%3Cg fill='%23057353' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23057857' cx='50' cy='800' r='50'/%3E%3Cg fill='%23067d5a' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2306825e' cx='50' cy='900' r='50'/%3E%3Cg fill='%23068761' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23078C65' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .container_cards .cards:hover h1,
@@ -389,7 +386,7 @@ html::-webkit-scrollbar {
     justify-content: center;
     width: 100vw;
     height: 800px;
-    background-color: #b05b00;
+    background-color: #a07c2e;
     margin-top: 2rem;
     overflow: hidden;
     transition: all .5s ease;
@@ -420,6 +417,7 @@ html::-webkit-scrollbar {
     bottom: 90px;
     left: 40px;
     font-size: 13px;
+    z-index: 5;
 }
 
 .late button {
@@ -430,10 +428,17 @@ html::-webkit-scrollbar {
     font-size: 13px;
     font-weight: 700;
     background-color: transparent;
-    color: white;
     border: solid 2px white;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease;
+    color: white;
+    z-index: 5;
+}
+
+.late button:hover {
+    background-color: transparent;
+    color: white;
 }
 
 .late .move_late {
@@ -447,6 +452,7 @@ html::-webkit-scrollbar {
     font-size: 12px;
     gap: .5rem;
     color: white;
+    z-index: 2;
 }
 
 .late .move_late h3 {
@@ -465,10 +471,11 @@ html::-webkit-scrollbar {
 
 .late img {
     width: 350px;
-    transform: rotate(15deg) translate(100vw, -50%);
+    transform: rotate(15deg) translate(200vw, -50%);
     position: absolute;
-    filter: drop-shadow(2rem 1px 2rem #432200);
+    filter: drop-shadow(1rem 1px 1rem #432200);
     transition: all 1s ease;
+    z-index: 1;
 }
 
 .late img.active {
@@ -477,6 +484,63 @@ html::-webkit-scrollbar {
 
 .late img.out {
     transform: rotate(15deg) translate(-100vw, -50%);
+}
+
+.late .circle {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #68501d47;
+    border-radius: 50%;
+    top: -200px;
+    left: -200px;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #68501d47;
+    border-radius: 50%;
+    bottom: -200px;
+    right: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio::before {
+    content: '';
+    display: block;
+    width: 350px;
+    height: 350px;
+    background-color: #a07c2e;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio.gray::before {
+    background-color: gray;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio.amarillo::before {
+    background-color: #cdaa58;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio.rosado::before {
+    background-color: #e37974;
+    transition: all .2s ease;
+}
+
+.late .circle_vacio.verde::before {
+    background-color: #a6ad5a;
+    transition: all .2s ease;
 }
 
 @keyframes revealBottom {
@@ -570,6 +634,27 @@ html::-webkit-scrollbar {
     .container_cards .cards .cards_size {
         padding: 0 2rem 0;
     }
+
+    .late .circle {
+        top: -300px;
+        left: -300px;
+    }
+
+    .late h1 {
+        position: absolute;
+        width: 400px;
+        left: 100px;
+        z-index: 1;
+        line-height: 120px;
+    }
+
+    .late img.active {
+        transform: translateX(70%) rotate(15deg);
+    }
+
+    .late img.out {
+        transform: translateX(-300vw) rotate(15deg);
+    }
 }
 
 @media (width < 1100px) {
@@ -584,6 +669,11 @@ html::-webkit-scrollbar {
 
     .hero .content_hero .icons {
         top: 200px;
+    }
+
+    .late h1 {
+        font-size: 120px;
+        line-height: 100px;
     }
 }
 
@@ -622,6 +712,30 @@ html::-webkit-scrollbar {
 
     .container_cards .cards .cards_size {
         padding: 0 5rem 0;
+    }
+
+    .late h1 {
+        font-size: 100px;
+        line-height: 80px;
+    }
+
+    .late img.active {
+        transform: translateX(50%) rotate(15deg);
+    }
+}
+
+@media (width < 900px) {
+    .late h1 {
+        transform: translate(0);
+        left: 30px;
+        top: 30px;
+        text-align: start;
+    }
+
+    .late img.active {
+        left: 50%;
+        transform: translateX(-50%) rotate(15deg);
+        width: 250px;
     }
 }
 
@@ -672,6 +786,31 @@ html::-webkit-scrollbar {
     .container_cards .cards .cards_size {
         padding: 0 8rem 0;
     }
+
+    .late h1 {
+        width: 100px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .late .move_late {
+        left: 100px;
+        bottom: 160px;
+    }
+
+    .late img.active {
+        width: 300px;
+        margin-top: -6rem;
+    }
+
+    .late .circle {
+        display: none;
+    }
+
+    .late .circle_vacio {
+        bottom: -300px;
+        right: -300px;
+    }
 }
 
 @media (width < 500px) {
@@ -686,6 +825,10 @@ html::-webkit-scrollbar {
 
     .container_cards .cards .cards_size {
         padding: 0 5rem 0;
+    }
+
+    .late img.active {
+        width: 250px;
     }
 }
 
@@ -703,6 +846,19 @@ html::-webkit-scrollbar {
     .container_cards .cards {
         height: 600px;
     }
+
+    .late img.active {
+        margin-top: -5rem;
+        width: 250px;
+    }
+
+    .late p {
+        width: 200px;
+    }
+
+    .late .move_late {
+        bottom: 180px;
+    }
 }
 
 @media (width < 350px) {
@@ -717,5 +873,23 @@ html::-webkit-scrollbar {
     .hero .content_hero img {
         margin-left: 1rem;
         width: 150px;
+    }
+
+    .late img.active {
+        width: 200px;
+    }
+
+    .late {
+        height: 700px;
+    }
+}
+
+@media (width < 300px) {
+    .late img.active {
+        width: 150px;
+    }
+
+    .late {
+        height: 650px;
     }
 }
