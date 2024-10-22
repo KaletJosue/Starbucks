@@ -396,6 +396,7 @@ html::-webkit-scrollbar {
     font-size: 150px;
     font-weight: 900;
     color: white;
+    z-index: 1;
 }
 
 .late .border {
@@ -617,8 +618,13 @@ html::-webkit-scrollbar {
         padding: 0 1rem 3rem;
     }
 
+    .late {
+        height: 600px;
+    }
+
     .late img.active {
-        width: 280px;
+        margin-top: -2rem;
+        width: 250px;
     }
 }
 
@@ -729,6 +735,10 @@ html::-webkit-scrollbar {
 }
 
 @media (width < 900px) {
+    .late {
+        height: 800px;
+    }
+
     .late h1 {
         transform: translate(0);
         left: 30px;
@@ -833,6 +843,10 @@ html::-webkit-scrollbar {
 
     .late img.active {
         width: 250px;
+    }
+
+    .late .circle_vacio {
+        display: none;
     }
 }
 
