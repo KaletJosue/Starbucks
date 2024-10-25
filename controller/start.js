@@ -23,10 +23,13 @@ window.addEventListener('scroll', function () {
     var card3 = document.querySelector('#third_card')
     var card4 = document.querySelector('#fourth_card')
 
+    var panini = document.querySelector('.panini')
+
     let posicionObj1 = card1.getBoundingClientRect().top
     let posicionObj2 = card2.getBoundingClientRect().top
     let posicionObj3 = card3.getBoundingClientRect().top
     let posicionObj4 = card4.getBoundingClientRect().top
+    let posicionObj5 = panini.getBoundingClientRect().top
 
     let tamanoPantalla = window.innerHeight / 3.5
 
@@ -45,6 +48,10 @@ window.addEventListener('scroll', function () {
     if ((posicionObj4 - 400) < tamanoPantalla) {
         card4.classList.add('active')
     }
+
+    if ((posicionObj5 - 400) < tamanoPantalla) {
+        panini.classList.add('active')
+    }
 })
 
 // Buttons
@@ -53,7 +60,7 @@ var login = document.querySelector('#login')
 
 
 login.addEventListener('click', () => {
-    location.href = "/Starbucks/views/login.php"
+    location.href = "views/login.php"
 })
 
 // imgs

@@ -544,6 +544,92 @@ html::-webkit-scrollbar {
     transition: all .2s ease;
 }
 
+.conpanini {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.panini {
+    width: 100vw;
+    padding: 10rem 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(150vw);
+    gap: 1rem;
+}
+
+.panini.active {
+    animation: 1s revealRight2 forwards;
+}
+
+.panini img {
+    width: 1500px;
+    filter: drop-shadow(1rem 1px 1rem #032d207e);
+}
+
+.panini .text_panini h1 {
+    font-size: 150px;
+    font-weight: 1000;
+    line-height: 120px;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #032D20, #078C65);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 1rem;
+}
+
+.panini .text_panini p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.panini .text_panini a {
+    padding: 1rem 2rem;
+    font-size: 13px;
+    background: linear-gradient(90deg, #032D20, #078C65);
+    border-radius: 10px;
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+.panini .text_panini a:hover {
+    background: linear-gradient(270deg, #032D20, #078C65);
+    transform: translateX(20px);
+}
+
+.reutilizable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #1c3a33;
+}
+
+.reutilizable .text_reutilizable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reutilizable .text_reutilizable h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.reutilizable .text_reutilizable p {
+    color: white;
+    font-size: 13px;
+}
+
 @keyframes revealBottom {
     0% {
         transform: translateY(200px) scale(1.5);
@@ -553,6 +639,16 @@ html::-webkit-scrollbar {
     100% {
         transform: translateY(0) scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes revealRight2 {
+    0% {
+        transform: translateX(150vw);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -589,6 +685,18 @@ html::-webkit-scrollbar {
 @media (width < 1600px) {
     .container_cards {
         padding: 10rem 3rem 5rem;
+    }
+}
+
+@media (width < 1500px) {
+    .reutilizable .text_reutilizable {
+        display: none;
+    }
+
+    .reutilizable {
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 }
 
@@ -665,6 +773,14 @@ html::-webkit-scrollbar {
     .late img.out {
         transform: translateX(-300vw) rotate(15deg);
     }
+
+    .panini {
+        padding: 10rem 5rem;
+    }
+
+    .panini img {
+        width: 400px;
+    }
 }
 
 @media (width < 1100px) {
@@ -684,6 +800,10 @@ html::-webkit-scrollbar {
     .late h1 {
         font-size: 120px;
         line-height: 100px;
+    }
+
+    .panini img {
+        width: 350px;
     }
 }
 
@@ -731,6 +851,21 @@ html::-webkit-scrollbar {
 
     .late img.active {
         transform: translateX(50%) rotate(15deg);
+    }
+
+    .panini {
+        gap: 2rem;
+        padding: 5rem 5rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .panini img {
+        width: 500px;
+    }
+
+    .reutilizable img {
+        width: 100%;
     }
 }
 
@@ -817,6 +952,10 @@ html::-webkit-scrollbar {
         margin-top: -6rem;
     }
 
+    .late img.out {
+        margin-top: -6rem;
+    }
+
     .late .circle {
         display: none;
     }
@@ -824,6 +963,22 @@ html::-webkit-scrollbar {
     .late .circle_vacio {
         bottom: -300px;
         right: -300px;
+    }
+
+    .panini {
+        padding: 5rem 2rem;
+    }
+}
+
+@media (width < 600px) {
+    .panini img {
+        width: 400px;
+    }
+
+    .panini .text_panini h1 {
+        font-size: 90px;
+        line-height: 75px;
+        width: 100%;
     }
 }
 
@@ -848,6 +1003,14 @@ html::-webkit-scrollbar {
     .late .circle_vacio {
         display: none;
     }
+
+    .panini .text_panini {
+        text-align: center;
+    }
+
+    .panini img {
+        width: 350px;
+    }
 }
 
 @media (width < 400px) {
@@ -868,6 +1031,10 @@ html::-webkit-scrollbar {
     .late img.active {
         margin-top: -5rem;
         width: 250px;
+    }
+
+    .late img.out {
+        margin-top: -5rem;
     }
 
     .late p {
@@ -899,6 +1066,15 @@ html::-webkit-scrollbar {
 
     .late {
         height: 700px;
+    }
+
+    .panini img {
+        width: 250px;
+    }
+
+    .panini .text_panini h1 {
+        font-size: 60px;
+        line-height: 50px;
     }
 }
 

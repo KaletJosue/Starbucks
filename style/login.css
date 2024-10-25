@@ -233,6 +233,7 @@ body .img2.active {
     justify-content: center;
     transition: all .2s ease;
     padding: 1rem 2rem;
+    z-index: 10;
 }
 
 .modal.active {
@@ -252,7 +253,7 @@ body .img2.active {
 }
 
 .modal-content::before {
-    background-color: #ff0000da;
+    background-color: #0dff00da;
     border-radius: 50%;
     content: '';
     filter: blur(60px);
@@ -289,7 +290,7 @@ body .img2.active {
 
 span.icon {
     font-size: 50px;
-    color: #f65656;
+    color: #47bc43;
 }
 
 .right-items h1 {
@@ -308,7 +309,7 @@ button#okBtn {
     font-weight: 500;
     background-color: transparent;
     color: white;
-    border: 1px solid #f65656;
+    border: 1px solid #47bc43;
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -318,7 +319,7 @@ button#okBtn {
 }
 
 button#okBtn:hover {
-    background-color: #f65656;
+    background-color: #47bc43;
 }
 
 @keyframes revealBottom {
@@ -349,7 +350,7 @@ button#okBtn:hover {
     }
 }
 
-@media (height < 1000px) {
+@media (height < 1000px) and (width < 1200px) {
     body .img1 {
         width: 150px;
     }
@@ -359,7 +360,7 @@ button#okBtn:hover {
     }
 }
 
-@media (height < 900px) {
+@media (height < 900px) and (width < 1200px) {
     body .img1 {
         margin-top: 2rem;
     }
@@ -369,7 +370,7 @@ button#okBtn:hover {
     }
 }
 
-@media (height < 800px) {
+@media (height < 800px) and (width < 1200px) {
     body .img1 {
         margin-top: 2rem;
         margin-right: 5rem;
