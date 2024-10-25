@@ -1016,10 +1016,6 @@ html::-webkit-scrollbar {
     .panini .text_panini {
         text-align: center;
     }
-
-    .panini img {
-        width: 350px;
-    }
 }
 
 @media (width < 400px) {
@@ -1053,6 +1049,10 @@ html::-webkit-scrollbar {
     .late .move_late {
         bottom: 180px;
     }
+
+    .panini img {
+        width: 200px;
+    }
 }
 
 @media (width < 350px) {
@@ -1075,10 +1075,6 @@ html::-webkit-scrollbar {
 
     .late {
         height: 700px;
-    }
-
-    .panini img {
-        width: 250px;
     }
 
     .panini .text_panini h1 {
