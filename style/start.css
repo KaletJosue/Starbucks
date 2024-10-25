@@ -689,14 +689,14 @@ html::-webkit-scrollbar {
 }
 
 @media (width < 1500px) {
-    .reutilizable .text_reutilizable {
-        display: none;
-    }
-
     .reutilizable {
         display: flex;
         align-items: center;
         justify-content: end;
+    }
+
+    .reutilizable img {
+        width: 50%;
     }
 }
 
@@ -733,6 +733,19 @@ html::-webkit-scrollbar {
     .late img.active {
         margin-top: -2rem;
         width: 250px;
+    }
+
+    .panini {
+        padding: 10rem 15rem;
+    }
+
+    .panini img {
+        width: 300px;
+    }
+
+    .panini .text_panini h1 {
+        font-size: 90px;
+        line-height: 70px;
     }
 }
 
@@ -776,10 +789,6 @@ html::-webkit-scrollbar {
 
     .panini {
         padding: 10rem 5rem;
-    }
-
-    .panini img {
-        width: 400px;
     }
 }
 
