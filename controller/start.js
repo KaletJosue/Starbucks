@@ -77,6 +77,10 @@ var addcar = document.querySelector('#addcar')
 var circle = document.querySelector('.circle')
 var circle_vacio = document.querySelector('.circle_vacio')
 
+addcar.addEventListener('click', () => {
+    location.href = "../Starbucks/views/login.php"
+})
+
 move_right.addEventListener('click', () => {
     if (variable == 5) {
         variable = 1;
